@@ -1,0 +1,4 @@
+export type Check = { id: string; title: string; status: "pass" | "fail" | "unknown"; weight: number; evidence: string; fix: string; effort: "Quick fix" | "Content update"; explanation: string };
+export type Audit = { id: string; createdAt: string; url: string; finalUrl: string; version: string; score: number | null; knownWeight: number; checks: Check[]; wordCount: number; pageTitle: string; note: string };
+export type Observation = { id: string; engine: "ChatGPT" | "Gemini"; prompt: string; answer: string; observedAt: string; createdAt: string; mentioned: boolean; cited: boolean; citations: string[]; source: "manual"; locale: string };
+export type Project = { id: string; name: string; url: string; description: string; audience: string; competitors: string[]; prompts: string[]; tasks: Record<string, "planned" | "done">; createdAt: string; audits: Audit[]; observations: Observation[] };
