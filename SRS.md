@@ -1,9 +1,9 @@
-# SignalLift — MVP SRS
+# PromptLens — MVP SRS
 
 **Version:** 0.1 · **Date:** 5 November 2026 · **Status:** implementation started
 
 ## Purpose
-Help small agencies, solo SEO consultants, and B2B SaaS teams find website improvements, complete them, and report progress toward AI visibility. SignalLift is a working name.
+Help small agencies, solo SEO consultants, and B2B SaaS teams find website improvements, complete them, and report progress toward AI visibility. PromptLens is a working name.
 
 ## Users and stories
 | User | Core story |

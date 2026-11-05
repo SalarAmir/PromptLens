@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SignalLift — Turn insights into visibility",
+  title: "PromptLens — Turn insights into visibility",
   description: "A focused workspace for website readiness, actionable improvements, and evidence-based AI visibility reporting.",
   icons: {
     icon: "/favicon.svg",

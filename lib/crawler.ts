@@ -14,7 +14,7 @@ export async function fetchPublic(input: string, kind:"html"|"text"="html") {
   let url=normalizeUrl(input);
   for(let redirect=0;redirect<=3;redirect++){
     await validateDns(new URL(url).hostname);
-    const r=await fetch(url,{redirect:"manual",headers:{"User-Agent":"SignalLiftAudit/0.1 (+website-readiness-check)",Accept:kind==="html"?"text/html":"text/plain"},signal:AbortSignal.timeout(8000)});
+    const r=await fetch(url,{redirect:"manual",headers:{"User-Agent":"PromptLensAudit/0.1 (+website-readiness-check)",Accept:kind==="html"?"text/html":"text/plain"},signal:AbortSignal.timeout(8000)});
     if([301,302,303,307,308].includes(r.status)){
       const to=r.headers.get("location"); await r.body?.cancel();
       if(!to||redirect===3)throw new Error("The website redirected too many times.");

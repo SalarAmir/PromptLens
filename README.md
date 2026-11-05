@@ -1,4 +1,4 @@
-# SignalLift — private MVP
+# PromptLens — private MVP
 
 A private working build for three brand projects, real one-page readiness audits, evidence-backed action plans, buyer questions, manually recorded AI answers, and printable agency-branded reports. See SRS.md for the sellable MVP scope and launch gates.
 
